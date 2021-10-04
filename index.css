@@ -1,0 +1,46 @@
+body{
+	
+	
+}
+
+
+
+#mainCard{
+
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border:1px solid #cccccc;
+	border-top:4px solid #000;
+	border-radius:5px;
+	box-shadow:3px 4px #dbdbdb;
+	width:23%;
+	height:200px;
+	
+}
+
+.info{
+	
+	font-family:'Roboto Mono';
+	padding-top:30px;
+	font-size:24px;
+	line-height:10px;
+	background-color:#fff;
+
+}
+
+.info p{
+	font-family:'Ubuntu';
+	font-size:16px;
+}
+
+
+#mainCard img{
+	width:50%;
+	clip-path: circle(85px at center);
+	float:left;
+	margin-top:15px;
+}
