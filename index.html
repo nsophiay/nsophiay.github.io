@@ -9,6 +9,19 @@
 	
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script> <!-- Toggle tooltips -->
+			$(document).ready(function () {
+				$('[data-toggle="tooltip"]').tooltip({delay: {show: 300, hide: 100}});
+				$(".animation").addClass("delay-1s");
+				
+				
+			});
+			
+			
+		</script>
 	
 	</head>
 	
@@ -17,15 +30,14 @@
 	
 		<header>
 		
-			<nav>
-			
-				<a href="https://github.com/nsophiay"><img src="GitHub-Mark-32px.png"/></a>
-				<a href="https://www.linkedin.com/in/saff-niro/"><img src="LI-In-Bug.png" width="32px"/></a>
+			<nav id="icons">
+				<a href="https://github.com/nsophiay"><img src="GitHub-Mark-32px.png" data-toggle="tooltip" data-placement="bottom" title="GitHub"/></a>
+				<a href="https://www.linkedin.com/in/saff-niro/"><img src="LI-In-Bug.png" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"/></a>
 			
 			</nav>
 		
 		</header>
-		<div id="mainCard">
+		<div id="mainCard" class="animated">
 		
 			<img src="avatar.png"/> <!-- Modified from the original https://www.freepik.com/free-vector/flat-pack-female-avatars_1265919.htm -->
 			<div class="info">Saffia Niro

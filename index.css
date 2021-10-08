@@ -1,7 +1,4 @@
-body{
-	
-	
-}
+
 
 
 
@@ -27,7 +24,7 @@ body{
 	font-family:'Roboto Mono';
 	padding-top:30px;
 	font-size:24px;
-	line-height:10px;
+	line-height:23px;
 	background-color:#fff;
 
 }
@@ -44,3 +41,25 @@ body{
 	float:left;
 	margin-top:15px;
 }
+
+#icons{
+	
+	margin-top:15px;
+	
+}
+
+#icons a{
+	
+	margin-left:20px;
+	
+}
+
+nav img{
+	
+	width:24px;
+	
+}
+
+.tooltip.bottom > .tooltip-arrow {
+    display:none;
+ }
