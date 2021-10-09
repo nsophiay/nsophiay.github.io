@@ -8,15 +8,24 @@
 	<head>
 	
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu|Open+Sans">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<script> <!-- Toggle tooltips -->
+
 			$(document).ready(function () {
 				$('[data-toggle="tooltip"]').tooltip({delay: {show: 300, hide: 100}});
 				$(".animation").addClass("delay-1s");
+				$("#arrow").click(
 				
+					function() {
+						$('html, body').animate({
+							scrollTop: document.body.scrollHeight
+						}, 300);
+					}
+				
+				);
 				
 			});
 			
@@ -27,12 +36,12 @@
 	
 	
 	<body>
-	
+	<div id="container">
 		<header>
-		
+			
 			<nav id="icons">
-				<a href="https://github.com/nsophiay"><img src="GitHub-Mark-32px.png" data-toggle="tooltip" data-placement="bottom" title="GitHub"/></a>
-				<a href="https://www.linkedin.com/in/saff-niro/"><img src="LI-In-Bug.png" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"/></a>
+				<a href="https://github.com/nsophiay"><img src="Logos\GitHub-Mark-32px.png" data-toggle="tooltip" data-placement="bottom" title="GitHub"/></a>
+				<a href="https://www.linkedin.com/in/saff-niro/"><img src="Logos\LI-In-Bug.png" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"/></a>
 			
 			</nav>
 		
@@ -45,8 +54,31 @@
 			</div>
 			
 		</div>
+		<div id="projects">
+			<h2>Projects</h2>
+			<table>
+				<tr>
+					<td class="projectTitle">Wikipedia Graph and Infobox Updater<br><br><img src="Logos\python-logo-generic.svg" data-toggle="tooltip" data-placement="bottom" title="Written in Python" width="80px"/></td>
+					<td class="description"><p>Python scripts that generate the Wikipedia markup needed to update graphs and infoboxes in Wikipedia articles about the COVID-19 pandemic in Quebec and Canada.</p>
+					<p><a href="https://github.com/nsophiay/WikipediaGraphUpdater">Visit the GitHub repository</a></p>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="projectTitle">WhatsApp Chat Analyzer<br><br><img src="Logos\Java-Logo.png" data-toggle="tooltip" data-placement="bottom" title="Written in Java" width="60px"/></td>
+					<td class="description"><p>Java program that computes WhatsApp chat statistics from an archived text file,including the number of total messages, the most common words used by each person, etc.</p>
+					<p><a href="https://github.com/nsophiay/WhatsApp-Chat-Analyzer">Visit the GitHub repository</a></p>
+					</td>
+				</tr>
+
+				
+			
+			</table>
+		</div>
+		<div id="arrow"/>
+		
 	
-	
+	</div>
 	</body>
 
 
