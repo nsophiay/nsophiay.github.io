@@ -1,5 +1,5 @@
-body{
-	height:1000px;
+#container{
+	height:1550px;
 	overflow-y:scroll;
 	
 }
@@ -19,32 +19,33 @@ body{
 	border-radius:5px;
 	box-shadow:3px 4px #dbdbdb;
 	width:22%;
-	height:24%;
-	
+	height:23%;
+	min-width:250px;
+	min-height:120px;
 }
 
 .info{
 	
 	font-family:'Roboto Mono';
-	font-size:1.5vw;
+	font-size:calc(10px + 1vw);
 	background-color:#fff;
-	padding-top:6vh;
+	padding-top:6vmin;
 	height:100%;
 }
 
 .info p{
 	font-family:'Ubuntu';
-	font-size:1vw;
+	font-size:calc(8px + 0.5vw);
 }
 
 
 
 #mainCard img{
-	padding-top:3.25vh;
-	width:40%;
+	padding-top:3.25vmin;
+	width:35%;
 	border-radius:100%;
 	float:left;
-	min-width:90px;
+	min-width:85px;
 }
 
 #icons{
@@ -74,24 +75,9 @@ nav img{
     display:none;
 }
  
- 
-@keyframes scrollDown{
-	
-	0% { top: 75%; }
-	15% { top: 75.25%; }
-	25% { top: 75.5%; }
-	35% { top: 75.75%; }
-	45% { top: 76%; }
-	55% { top: 76.25%; }
-	65% { top: 76.5%; }
-	75% { top: 76.75%; }
-	85% { top: 77%; }
-	95% { top: 77.25%; }
-	100% { top: 77.5%; }
-	
-}
 
-@keyframes scrollDown2{
+
+@keyframes scrollDown{
 	
 	0% { margin-top: 0px; }
 	15% { margin-top: 2px; }
@@ -112,8 +98,8 @@ nav img{
 	margin:0;
 	position: absolute;
 	left:50%;
-	transform: translateX(-50%);
-	top:500px;
+	top:80%;
+	transform: translate(-50%);
 	background-color:#fff;
 	width:150px;
 	height:150px;
@@ -121,11 +107,11 @@ nav img{
 }
 
 .arrow{
-	margin-top:0px;
-	font-size:32px;
+	margin:0px;
+	font-size:2.25vw;;
 	text-align:center;
-	animation-name: scrollDown2;
-	animation-duration:2s;
+	animation-name: scrollDown;
+	animation-duration:1.5s;
 	animation-iteration-count: infinite;
 }
 
@@ -148,12 +134,14 @@ nav img{
 
 #projects table{
 	
-	width:50%;
+	width:55vw;
+	min-width:500px;
 	position:absolute;
 	top:15%;
 	left:50%;
 	transform: translateX(-50%);
 	font-family:'Open Sans';
+	font-size:100%;
 	border-collapse:separate; 
 	border-spacing:25px;
 	
