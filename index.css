@@ -18,32 +18,33 @@ body{
 	border-top:4px solid #000;
 	border-radius:5px;
 	box-shadow:3px 4px #dbdbdb;
-	width:23%;
-	height:200px;
+	width:22%;
+	height:24%;
 	
 }
 
 .info{
 	
 	font-family:'Roboto Mono';
-	padding-top:30px;
-	font-size:24px;
-	line-height:23px;
+	font-size:1.5vw;
 	background-color:#fff;
-
+	padding-top:6vh;
+	height:100%;
 }
 
 .info p{
 	font-family:'Ubuntu';
-	font-size:16px;
+	font-size:1vw;
 }
 
 
+
 #mainCard img{
-	width:50%;
-	clip-path: circle(85px at center);
+	padding-top:3.25vh;
+	width:40%;
+	border-radius:100%;
 	float:left;
-	margin-top:15px;
+	min-width:90px;
 }
 
 #icons{
