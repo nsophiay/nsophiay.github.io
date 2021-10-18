@@ -1,9 +1,10 @@
-#container{
-	height:1550px;
+body{
 	overflow-y:scroll;
-	
 }
 
+#container{
+	height:1550px;
+}
 
 
 #mainCard{
