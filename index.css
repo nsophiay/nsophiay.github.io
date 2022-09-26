@@ -1,5 +1,6 @@
 body{
 	overflow-y:scroll;
+	overflow-x:hidden;
 }
 
 
@@ -11,7 +12,7 @@ body{
 	box-shadow:3px 4px #dbdbdb;
 	padding:20px;
 	min-height:150px;
-	margin-top:25%;
+	margin-top:15%;
 
 }
 
@@ -40,9 +41,12 @@ body{
 #icons{
 	
 	z-index:1000000;
-	width:100%;
+	margin:10px;
 	padding:10px;
-	
+	background-color:#e7fffe;
+	border-radius: 1000px;
+	border: 0px solid rgba(0,0,0,.0);
+	box-shadow: inset 0px 3px 3px 1px rgba(0,0,0,.08),inset 0px -1px 2px 1px rgba(255,255,255,.45);
 }
 
 #icons a{
@@ -85,7 +89,7 @@ nav img{
 	margin:0;
 	position: absolute;
 	left:50%;
-	top:80%;
+	top:85%;
 	transform: translate(-50%);
 	background-color:#fff;
 	width:150px;
