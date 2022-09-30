@@ -52,6 +52,7 @@ body{
 
 #icons{
 	position: fixed;
+	min-width:100px;
 	width: 98%;
 	margin:10px;
 	padding:10px;
@@ -74,6 +75,34 @@ nav img{
 	
 	width:24px;
 	
+}
+
+.bubble{
+	width:fit-content;
+	padding:2px 8px 2px 8px;
+	background-color:#d5ffdb;
+	border-radius: 1000px;
+	border: 0px solid rgba(0,0,0,.0);
+	box-shadow: inset 0px 5px 5px 1px rgba(0,0,0,.08),inset 0px -1px 2px 1px rgba(255,255,255,.45);
+	font-size:14px;
+	transition:0.2s;
+	color:#007a12;
+	display:inline;
+}
+
+.bubble:hover{
+	background-color:#007a12;
+	color:#d5ffdb;
+	text-decoration:none;
+}
+
+.bubble a{
+	color:#007a12;
+}
+
+.bubble a:hover{
+	color:#d5ffdb;
+	text-decoration:none;
 }
 
 
@@ -125,6 +154,7 @@ nav img{
 	font-size:100%;
 	border-collapse:separate; 
 	border-spacing:25px;
+	table-layout: fixed;
 	
 }
 
@@ -139,7 +169,17 @@ nav img{
 }
 
 .projectTitle{
-	
+
+	width:25%;
 	font-weight:bold;
-	
 }
+
+
+#demo{
+	display:inline;
+}
+
+#bookGeneratorDemo{
+	display:none;
+}
+

@@ -29,6 +29,15 @@
 						document.getElementById("icons").style.width = "98%";
 					}
 				}
+
+				$("#demo").click(function(){
+					$("#bookGeneratorDemo").toggle();
+					if ($(this).text() == "Show demo") {
+						$(this).text("Hide demo");     
+					} else {
+						$(this).text("Show demo");      
+					}   
+				});
 			});
 			
 			
@@ -79,21 +88,8 @@
 				<div id="projects">
 					<h2>Projects</h2>
 					<table>
-				
-						<tr>
-							<td class="projectTitle">Wikipedia Graph and Infobox Updater<br><br><img src="Logos\python-logo-generic.svg" data-toggle="tooltip" data-placement="bottom" title="Written in Python" width="80px"/></td>
-							<td class="description"><p>Python scripts that generate the Wikipedia markup needed to update graphs and infoboxes in Wikipedia articles about the COVID-19 pandemic in Quebec and Canada.</p>
-							<p><a href="https://github.com/nsophiay/WikipediaGraphUpdater">Visit the GitHub repository</a></p>
-							</td>
-						</tr>
-	
-						<tr>
-							<td class="projectTitle">WhatsApp Chat Analyzer<br><br><img src="Logos\Java-Logo.png" data-toggle="tooltip" data-placement="bottom" title="Written in Java" width="60px"/></td>
-							<td class="description"><p>Java program that computes WhatsApp chat statistics from an archived text file, including the number of total messages, the most common words used by each person, etc.</p>
-							<p><a href="https://github.com/nsophiay/WhatsApp-Chat-Analyzer">Visit the GitHub repository</a></p>
-							</td>
-						</tr>
 						
+
 						<tr>
 							<td class="projectTitle">Personal website<br><br>
 								<img src="Logos\HTML5_Logo.svg" alt="HTML" data-toggle="tooltip" data-placement="bottom" title="Written with HTML" width="30px"/>
@@ -101,8 +97,55 @@
 								<img src="Logos\CSS3_Logo.svg" alt="CSS" data-toggle="tooltip" data-placement="bottom" title="Written with CSS" width="23px"/>
 								<img src="Logos\JavaScript-logo.png" alt="JS" data-toggle="tooltip" data-placement="bottom" title="Written with JavaScript" width="27px"/>
 								<img src="Logos\JQuery-Logo.svg" alt="jQuery" data-toggle="tooltip" data-placement="bottom" title="Written with jQuery" width="50px"/></td>
-							<td class="description"><p>I created this website to provide some basic information about myself and a select few of my projects in an interactive format.</p>
-							<p><a href="https://github.com/nsophiay/nsophiay.github.io">Visit the GitHub repository</a></p>
+							<td class="description"><p>Website that provides some basic information about myself and a select few of my projects.</p>
+							<p class="bubble"><a href="https://github.com/nsophiay/nsophiay.github.io">Visit the GitHub repository</a></p>
+							</td>
+						</tr>
+				
+						<tr>
+							<td class="projectTitle">Wikipedia Graph and Infobox Updater<br><br><img src="Logos\python-logo-generic.svg" data-toggle="tooltip" data-placement="bottom" title="Written in Python" width="80px"/></td>
+							<td class="description">
+								
+								<p>Python scripts that generate the Wikipedia markup needed to update graphs and infoboxes in Wikipedia articles about the COVID-19 pandemic in Quebec and Canada.</p>
+								<p><span style="font-weight:bold;">What I learned</span>:
+									<ul>
+										<li>File I/O in Python, including using the Pandas library</li>
+									</ul>
+								</p>
+								<p class="bubble"><a href="https://github.com/nsophiay/WikipediaGraphUpdater">Visit the GitHub repository</a></p>
+
+							</td>
+						</tr>
+
+						<tr>
+							<td class="projectTitle">GoodReads Book Generator<br><br>
+								<img src="Logos\HTML5_Logo.svg" alt="HTML" data-toggle="tooltip" data-placement="bottom" title="Written with HTML" width="30px"/>
+								<img src="Logos\bootstrap-logo.svg" alt="Bootstrap" data-toggle="tooltip" data-placement="bottom" title="Written with Bootstrap" width="30px"/>
+								<img src="Logos\CSS3_Logo.svg" alt="CSS" data-toggle="tooltip" data-placement="bottom" title="Written with CSS" width="23px"/>
+								<img src="Logos\JavaScript-logo.png" alt="JS" data-toggle="tooltip" data-placement="bottom" title="Written with JavaScript" width="27px"/>
+								<img src="Logos\JQuery-Logo.svg" alt="jQuery" data-toggle="tooltip" data-placement="bottom" title="Written with jQuery" width="50px"/>
+							</td>
+							<td class="description">
+								<p>Website that generates a list of randomly chosen books from your GoodReads to-read list based on selected criteria.</p>
+								<p class="bubble" id="demo">Show demo</p> <span style="font-size:18px;">|</span>
+								<p class="bubble"><a href="https://github.com/nsophiay/RandomBookGenerator">Visit the GitHub repository</a></p>
+								<video width="800" height="400" autoplay loop id="bookGeneratorDemo">
+									<source src="bookGeneratorDemo.mp4" type="video/mp4">
+								</video>
+							</td>
+						</tr>
+	
+						<tr>
+							<td class="projectTitle">WhatsApp Chat Analyzer<br><br><img src="Logos\Java-Logo.png" data-toggle="tooltip" data-placement="bottom" title="Written in Java" width="60px"/></td>
+							<td class="description">
+								<p>Java program that computes WhatsApp chat statistics from an archived text file, including the number of total messages, the most common words used by each person, etc.</p>
+								<p><span style="font-weight:bold;">What I'd do differently</span>:
+									<ul>
+										<li>Emphasize code reuse and writing general functions</li>
+										<li>Use existing libraries for file parsing</li>
+									</ul>
+								</p>
+								<p class="bubble"><a href="https://github.com/nsophiay/WhatsApp-Chat-Analyzer">Visit the GitHub repository</a></p>
 							</td>
 						</tr>
 	
@@ -111,7 +154,7 @@
 								<img src="Logos\cpp_logo.png" data-toggle="tooltip" data-placement="bottom" title="Written in C++" width="25px"/>
 								<img src="Logos\OpenGL.svg" data-toggle="tooltip" data-placement="bottom" title="Written in OpenGL" width="60px"/></td>
 							<td class="description"><p>Basic OpenGL program that displays an interactive 3D rendering of my name.</p>
-							<p><a href="https://github.com/nsophiay/3DNameRendering">Visit the GitHub repository</a></p>
+							<p class="bubble"><a href="https://github.com/nsophiay/3DNameRendering">Visit the GitHub repository</a></p>
 							</td>
 						</tr>
 	
@@ -119,7 +162,7 @@
 							<td class="projectTitle">Mock Online Store (Academic)<br><br><img src="Logos\Java-Logo.png" data-toggle="tooltip" data-placement="bottom" title="Written in Java" width="60px"/></td>
 							<td class="description"><p>Java program that uses client-server architecture to mimick an online store, where clients can purchase, search for, and return items.</p>
 							<p>The program was built in multiple iterations: the first using <a href="https://en.wikipedia.org/wiki/Java_remote_method_invocation" data-toggle="tooltip" data-placement="bottom" title="See on Wikipedia">RMI</a>, the second using <a href="https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture" data-toggle="tooltip" data-placement="bottom" title="See on Wikipedia">CORBA</a>, and the third using <a href="https://en.wikipedia.org/wiki/SOAP" data-toggle="tooltip" data-placement="bottom" title="See on Wikipedia">SOAP</a>.</p>
-							<p><a href="https://github.com/nsophiay/MockStoreApplication">Visit the GitHub repository</a></p>
+							<p class="bubble"><a href="https://github.com/nsophiay/MockStoreApplication">Visit the GitHub repository</a></p>
 							</td>
 						</tr>
 						
