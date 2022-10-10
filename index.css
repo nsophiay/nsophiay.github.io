@@ -172,6 +172,7 @@ nav img{
 
 	width:25%;
 	font-weight:bold;
+	vertical-align:baseline;
 }
 
 
@@ -180,6 +181,7 @@ nav img{
 }
 
 #bookGeneratorDemo{
+	padding-top:15px;
 	display:none;
 }
 

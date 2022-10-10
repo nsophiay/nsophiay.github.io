@@ -31,10 +31,13 @@
 				}
 
 				$("#demo").click(function(){
-					$("#bookGeneratorDemo").toggle();
 					if ($(this).text() == "Show demo") {
+						$("#bookGeneratorDemo").show();
+						document.getElementById("bookGeneratorDemo").load();
+						document.getElementById("bookGeneratorDemo").play();
 						$(this).text("Hide demo");     
 					} else {
+						$("#bookGeneratorDemo").hide();
 						$(this).text("Show demo");      
 					}   
 				});
@@ -129,7 +132,7 @@
 								<p>Website that generates a list of randomly chosen books from your GoodReads to-read list based on selected criteria.</p>
 								<p class="bubble" id="demo">Show demo</p> <span style="font-size:18px;">|</span>
 								<p class="bubble"><a href="https://github.com/nsophiay/RandomBookGenerator" target="_blank">Visit the GitHub repository</a></p>
-								<video width="800" height="400" autoplay loop id="bookGeneratorDemo">
+								<video height="450" loop id="bookGeneratorDemo">
 									<source src="bookGeneratorDemo.mp4" type="video/mp4">
 								</video>
 							</td>
